@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Dragon_Fighting_Game
 {
-    public partial class Form2 : Form
+    public partial class frmFight : Form
     {
-        public Form2()
+        public frmFight()
         {
             InitializeComponent();
         }
