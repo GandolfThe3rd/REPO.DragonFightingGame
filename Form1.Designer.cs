@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(charCreationWindow));
             this.the = new System.Windows.Forms.GroupBox();
             this.btnPlayer1Save = new System.Windows.Forms.Button();
             this.lblPlayer1Name = new System.Windows.Forms.Label();
@@ -51,6 +52,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
+            this.lblDragonStats = new System.Windows.Forms.Label();
             this.the.SuspendLayout();
             this.grpDragon1Type.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -60,8 +62,9 @@
             // the
             // 
             this.the.AccessibleDescription = "grpPlayer1";
-            this.the.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.the.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.the.Controls.Add(this.btnPlayer1Save);
             this.the.Controls.Add(this.lblPlayer1Name);
             this.the.Controls.Add(this.grpDragon1Type);
@@ -207,8 +210,9 @@
             // groupBox1
             // 
             this.groupBox1.AccessibleDescription = "grpPlayer1";
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -360,11 +364,25 @@
             this.btnStart.Text = "Start Game";
             this.btnStart.UseVisualStyleBackColor = true;
             // 
+            // lblDragonStats
+            // 
+            this.lblDragonStats.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDragonStats.AutoSize = true;
+            this.lblDragonStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDragonStats.Location = new System.Drawing.Point(786, 12);
+            this.lblDragonStats.Name = "lblDragonStats";
+            this.lblDragonStats.Size = new System.Drawing.Size(185, 450);
+            this.lblDragonStats.TabIndex = 7;
+            this.lblDragonStats.Text = resources.GetString("lblDragonStats.Text");
+            // 
             // charCreationWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 473);
+            this.ClientSize = new System.Drawing.Size(980, 473);
+            this.Controls.Add(this.lblDragonStats);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.the);
@@ -379,6 +397,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -407,6 +426,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Label lblDragonStats;
     }
 }
 
