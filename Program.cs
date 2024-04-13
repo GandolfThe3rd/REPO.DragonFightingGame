@@ -16,7 +16,7 @@ namespace Dragon_Fighting_Game
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCharCreationWindow());
+            Application.Run(new FrmCharacterCreationWindow());
         }
     }
 }

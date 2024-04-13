@@ -1,6 +1,6 @@
 ﻿namespace Dragon_Fighting_Game
 {
-    partial class FrmCharCreationWindow
+    partial class FrmCharacterCreationWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCharCreationWindow));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCharacterCreationWindow));
             this.grpPlayer1 = new System.Windows.Forms.GroupBox();
             this.btnPlayer1Save = new System.Windows.Forms.Button();
             this.lblPlayer1Name = new System.Windows.Forms.Label();
@@ -386,7 +386,7 @@
             this.lblDragonStats.TabIndex = 7;
             this.lblDragonStats.Text = resources.GetString("lblDragonStats.Text");
             // 
-            // FrmCharCreationWindow
+            // FrmCharacterCreationWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -397,8 +397,8 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.grpPlayer2);
             this.Controls.Add(this.grpPlayer1);
-            this.Name = "FrmCharCreationWindow";
-            this.Text = "Character Creation";
+            this.Name = "FrmCharacterCreationWindow";
+            this.Text = "S";
             this.grpPlayer1.ResumeLayout(false);
             this.grpPlayer1.PerformLayout();
             this.grpDragon1Type.ResumeLayout(false);
