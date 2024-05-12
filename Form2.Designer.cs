@@ -30,6 +30,7 @@
         {
             this.rtbBattleLog = new System.Windows.Forms.RichTextBox();
             this.grpChar1 = new System.Windows.Forms.GroupBox();
+            this.btnRest = new System.Windows.Forms.Button();
             this.btnBlock = new System.Windows.Forms.Button();
             this.btnSpecial = new System.Windows.Forms.Button();
             this.lblHp1 = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.lblHp2 = new System.Windows.Forms.Label();
             this.lblSecondPlayer = new System.Windows.Forms.Label();
             this.grpLog = new System.Windows.Forms.GroupBox();
-            this.btnRest = new System.Windows.Forms.Button();
             this.grpChar1.SuspendLayout();
             this.grpOpponent.SuspendLayout();
             this.grpLog.SuspendLayout();
@@ -67,6 +67,17 @@
             this.grpChar1.TabIndex = 1;
             this.grpChar1.TabStop = false;
             this.grpChar1.Text = "X, The Y Dragon\'s Turn";
+            // 
+            // btnRest
+            // 
+            this.btnRest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRest.Location = new System.Drawing.Point(6, 109);
+            this.btnRest.Name = "btnRest";
+            this.btnRest.Size = new System.Drawing.Size(230, 207);
+            this.btnRest.TabIndex = 5;
+            this.btnRest.Text = "Rest";
+            this.btnRest.UseVisualStyleBackColor = true;
             // 
             // btnBlock
             // 
@@ -156,17 +167,6 @@
             this.grpLog.TabStop = false;
             this.grpLog.Text = "Battle Log";
             // 
-            // btnRest
-            // 
-            this.btnRest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRest.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRest.Location = new System.Drawing.Point(6, 109);
-            this.btnRest.Name = "btnRest";
-            this.btnRest.Size = new System.Drawing.Size(230, 207);
-            this.btnRest.TabIndex = 5;
-            this.btnRest.Text = "Rest";
-            this.btnRest.UseVisualStyleBackColor = true;
-            // 
             // frmFight
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -179,6 +179,7 @@
             this.Controls.Add(this.grpChar1);
             this.Name = "frmFight";
             this.Text = "Fight";
+            this.Load += new System.EventHandler(this.frmFight_Load);
             this.grpChar1.ResumeLayout(false);
             this.grpChar1.PerformLayout();
             this.grpOpponent.ResumeLayout(false);

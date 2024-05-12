@@ -1,0 +1,11 @@
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\bin\Debug\Dragon Fighting Game.exe.config
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\bin\Debug\Dragon Fighting Game.exe
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\bin\Debug\Dragon Fighting Game.pdb
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon Fighting Game.csproj.AssemblyReference.cache
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon_Fighting_Game.FrmCharacterCreationWindow.resources
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon_Fighting_Game.frmFight.resources
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon_Fighting_Game.Properties.Resources.resources
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon Fighting Game.csproj.GenerateResource.cache
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon Fighting Game.csproj.CoreCompileInputs.cache
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon Fighting Game.exe
+C:\Users\ethan\OneDrive\Desktop\Stuff\Visual Studio Files\DragonFightingGame\obj\Debug\Dragon Fighting Game.pdb

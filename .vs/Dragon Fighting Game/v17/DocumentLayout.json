@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|solutionrelative:form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|c:\\users\\ethan\\onedrive\\desktop\\stuff\\visual studio files\\dragonfightinggame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0710AD-D537-4347-857D-BEC136179625}|Dragon Fighting Game.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,32 +30,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAtwBIAAAAAAAAA",
+              "ViewState": "AQIAAMMAAAAAAAAAAADwv9IAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T20:29:20.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form2.cs",
-              "RelativeDocumentMoniker": "Form2.cs",
-              "ToolTip": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form2.cs [Design]",
-              "RelativeToolTip": "Form2.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T20:21:28.854Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -63,6 +51,18 @@
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T20:21:21.266Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form2.cs",
+              "RelativeDocumentMoniker": "Form2.cs",
+              "ToolTip": "C:\\Users\\ethan\\OneDrive\\Desktop\\Stuff\\Visual Studio Files\\DragonFightingGame\\Form2.cs [Design]",
+              "RelativeToolTip": "Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T20:21:28.854Z",
               "EditorCaption": " [Design]"
             }
           ]

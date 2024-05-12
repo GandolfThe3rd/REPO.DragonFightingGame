@@ -91,6 +91,7 @@
             this.btnPlayer1Save.TabIndex = 5;
             this.btnPlayer1Save.Text = "Save";
             this.btnPlayer1Save.UseVisualStyleBackColor = false;
+            this.btnPlayer1Save.Click += new System.EventHandler(this.btnPlayer1Save_Click);
             // 
             // lblPlayer1Name
             // 
@@ -135,6 +136,7 @@
             this.radDragon1Earth.TabStop = true;
             this.radDragon1Earth.Text = "Earth Dragon";
             this.radDragon1Earth.UseVisualStyleBackColor = true;
+            this.radDragon1Earth.CheckedChanged += new System.EventHandler(this.radDragon1Earth_CheckedChanged);
             // 
             // radDragon1Wind
             // 
@@ -149,6 +151,7 @@
             this.radDragon1Wind.TabStop = true;
             this.radDragon1Wind.Text = "Wind Dragon";
             this.radDragon1Wind.UseVisualStyleBackColor = true;
+            this.radDragon1Wind.CheckedChanged += new System.EventHandler(this.radDragon1Wind_CheckedChanged);
             // 
             // radDragon1Ice
             // 
@@ -163,6 +166,7 @@
             this.radDragon1Ice.TabStop = true;
             this.radDragon1Ice.Text = "IceDragon";
             this.radDragon1Ice.UseVisualStyleBackColor = true;
+            this.radDragon1Ice.CheckedChanged += new System.EventHandler(this.radDragon1Ice_CheckedChanged);
             // 
             // radDragon1Fire
             // 
@@ -177,6 +181,7 @@
             this.radDragon1Fire.TabStop = true;
             this.radDragon1Fire.Text = "Fire Dragon";
             this.radDragon1Fire.UseVisualStyleBackColor = true;
+            this.radDragon1Fire.CheckedChanged += new System.EventHandler(this.radDragon1Fire_CheckedChanged);
             // 
             // lblDragon1Name
             // 
@@ -242,6 +247,7 @@
             this.btnPlayer2Save.TabIndex = 5;
             this.btnPlayer2Save.Text = "Save";
             this.btnPlayer2Save.UseVisualStyleBackColor = false;
+            this.btnPlayer2Save.Click += new System.EventHandler(this.btnPlayer2Save_Click);
             // 
             // lblPlayer2Name
             // 
@@ -286,6 +292,7 @@
             this.radDragon2Earth.TabStop = true;
             this.radDragon2Earth.Text = "Earth Dragon";
             this.radDragon2Earth.UseVisualStyleBackColor = true;
+            this.radDragon2Earth.CheckedChanged += new System.EventHandler(this.radDragon2Earth_CheckedChanged);
             // 
             // radDragon2Wind
             // 
@@ -300,6 +307,7 @@
             this.radDragon2Wind.TabStop = true;
             this.radDragon2Wind.Text = "Wind Dragon";
             this.radDragon2Wind.UseVisualStyleBackColor = true;
+            this.radDragon2Wind.CheckedChanged += new System.EventHandler(this.radDragon2Wind_CheckedChanged);
             // 
             // radDragon2Ice
             // 
@@ -314,6 +322,7 @@
             this.radDragon2Ice.TabStop = true;
             this.radDragon2Ice.Text = "IceDragon";
             this.radDragon2Ice.UseVisualStyleBackColor = true;
+            this.radDragon2Ice.CheckedChanged += new System.EventHandler(this.radDragon2Ice_CheckedChanged);
             // 
             // radDragon2Fire
             // 
@@ -328,6 +337,7 @@
             this.radDragon2Fire.TabStop = true;
             this.radDragon2Fire.Text = "Fire Dragon";
             this.radDragon2Fire.UseVisualStyleBackColor = true;
+            this.radDragon2Fire.CheckedChanged += new System.EventHandler(this.radDragon2Fire_CheckedChanged);
             // 
             // lblDragon2Name
             // 
@@ -364,12 +374,14 @@
             // btnStart
             // 
             this.btnStart.BackColor = System.Drawing.Color.Silver;
+            this.btnStart.Enabled = false;
             this.btnStart.Location = new System.Drawing.Point(12, 373);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(768, 88);
             this.btnStart.TabIndex = 6;
             this.btnStart.Text = "Start Game";
             this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // lblDragonStats
             // 
