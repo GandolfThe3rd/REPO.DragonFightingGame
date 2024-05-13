@@ -89,6 +89,7 @@
             this.btnBlock.TabIndex = 4;
             this.btnBlock.Text = "Block";
             this.btnBlock.UseVisualStyleBackColor = true;
+            this.btnBlock.Click += new System.EventHandler(this.btnBlock_Click);
             // 
             // btnSpecial
             // 
@@ -100,6 +101,7 @@
             this.btnSpecial.TabIndex = 3;
             this.btnSpecial.Text = "Special Attack";
             this.btnSpecial.UseVisualStyleBackColor = true;
+            this.btnSpecial.Click += new System.EventHandler(this.btnSpecial_Click);
             // 
             // lblHp1
             // 
@@ -121,6 +123,7 @@
             this.btnAttack.TabIndex = 2;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
+            this.btnAttack.Click += new System.EventHandler(this.btnAttack_Click);
             // 
             // grpOpponent
             // 
@@ -130,7 +133,7 @@
             this.grpOpponent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.grpOpponent.Location = new System.Drawing.Point(277, 133);
             this.grpOpponent.Name = "grpOpponent";
-            this.grpOpponent.Size = new System.Drawing.Size(291, 111);
+            this.grpOpponent.Size = new System.Drawing.Size(291, 195);
             this.grpOpponent.TabIndex = 2;
             this.grpOpponent.TabStop = false;
             this.grpOpponent.Text = "Opponent: Name";
@@ -139,7 +142,7 @@
             // 
             this.lblHp2.AutoSize = true;
             this.lblHp2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHp2.Location = new System.Drawing.Point(79, 63);
+            this.lblHp2.Location = new System.Drawing.Point(82, 139);
             this.lblHp2.Name = "lblHp2";
             this.lblHp2.Size = new System.Drawing.Size(123, 38);
             this.lblHp2.TabIndex = 5;
@@ -148,10 +151,10 @@
             // lblSecondPlayer
             // 
             this.lblSecondPlayer.AutoSize = true;
-            this.lblSecondPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSecondPlayer.Location = new System.Drawing.Point(6, 18);
+            this.lblSecondPlayer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondPlayer.Location = new System.Drawing.Point(6, 59);
             this.lblSecondPlayer.Name = "lblSecondPlayer";
-            this.lblSecondPlayer.Size = new System.Drawing.Size(275, 38);
+            this.lblSecondPlayer.Size = new System.Drawing.Size(173, 25);
             this.lblSecondPlayer.TabIndex = 5;
             this.lblSecondPlayer.Text = "X, The Y Dragon\r\n";
             // 
@@ -173,13 +176,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Dragon_Fighting_Game.Properties.Resources._240966688_4763613430356384_2946048999633840585_n;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(580, 518);
+            this.ClientSize = new System.Drawing.Size(582, 518);
             this.Controls.Add(this.grpLog);
             this.Controls.Add(this.grpOpponent);
             this.Controls.Add(this.grpChar1);
             this.Name = "frmFight";
             this.Text = "Fight";
-            this.Load += new System.EventHandler(this.frmFight_Load);
             this.grpChar1.ResumeLayout(false);
             this.grpChar1.PerformLayout();
             this.grpOpponent.ResumeLayout(false);

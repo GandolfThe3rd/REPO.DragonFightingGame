@@ -66,6 +66,7 @@ namespace Dragon_Fighting_Game
                 btnPlayer1Save.Enabled = false;
                 player1Ready = true;
             }
+            checkStartButton();
             
         }
 
@@ -92,18 +93,18 @@ namespace Dragon_Fighting_Game
                         switch (dragon1Choice)
                         {
                             case 1:
-                                p1Values[0] = iceDragonHealth;
-                                p1Values[1] = iceDragonAttack;
-                                p1Values[2] = iceDragonSpecialAttack;
-                                p1Values[3] = iceDragonBlock;
-                                p1Data[2] = iceDragonName;
-                                return;
-                            case 2:
                                 p1Values[0] = fireDragonHealth;
                                 p1Values[1] = fireDragonAttack;
                                 p1Values[2] = fireDragonSpecialAttack;
                                 p1Values[3] = fireDragonBlock;
                                 p1Data[2] = fireDragonName;
+                                return;
+                            case 2:
+                                p1Values[0] = iceDragonHealth;
+                                p1Values[1] = iceDragonAttack;
+                                p1Values[2] = iceDragonSpecialAttack;
+                                p1Values[3] = iceDragonBlock;
+                                p1Data[2] = iceDragonName;
                                 return;
                             case 3:
                                 p1Values[0] = windDragonHealth;
@@ -128,18 +129,18 @@ namespace Dragon_Fighting_Game
                         switch (dragon2Choice)
                         {
                             case 1:
-                                p2Values[0] = iceDragonHealth;
-                                p2Values[1] = iceDragonAttack;
-                                p2Values[2] = iceDragonSpecialAttack;
-                                p2Values[3] = iceDragonBlock;
-                                p2Data[2] = iceDragonName;
-                                return;
-                            case 2:
                                 p2Values[0] = fireDragonHealth;
                                 p2Values[1] = fireDragonAttack;
                                 p2Values[2] = fireDragonSpecialAttack;
                                 p2Values[3] = fireDragonBlock;
                                 p2Data[2] = fireDragonName;
+                                return;
+                            case 2:
+                                p2Values[0] = iceDragonHealth;
+                                p2Values[1] = iceDragonAttack;
+                                p2Values[2] = iceDragonSpecialAttack;
+                                p2Values[3] = iceDragonBlock;
+                                p2Data[2] = iceDragonName;
                                 return;
                             case 3:
                                 p2Values[0] = windDragonHealth;
