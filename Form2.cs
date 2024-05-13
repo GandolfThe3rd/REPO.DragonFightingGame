@@ -21,12 +21,7 @@ namespace Dragon_Fighting_Game
             InitializeComponent();
 
             instance = this;
-
-        }
-
-        private void frmFight_Load(object sender, EventArgs e)
-        {
-
+            btnRest.Hide();
         }
     }
 }
