@@ -13,7 +13,7 @@ namespace Dragon_Fighting_Game
 {
     public partial class frmFight : Form
     {
-        int playerInitiative = 0;
+        int playerInitiative = 0; // declorations
         string[] p1Names;
         string[] p2Names;
         int[] p1values;
@@ -35,7 +35,7 @@ namespace Dragon_Fighting_Game
             onLoad();
         }
 
-        int randomRoll()
+        int randomRoll() // dice roll
         {
             int dice = 0;
             Random random = new Random();
@@ -44,7 +44,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void takeInitiative()
+        void takeInitiative() // rolls for the next turn
         {
             int playerTurn = 0;
             int player1Roll = 0;
@@ -84,7 +84,7 @@ namespace Dragon_Fighting_Game
             nextRound = false;
         }
 
-        void userInterface()
+        void userInterface() //updates ui
         {
             switch (playerInitiative)
             {
@@ -109,7 +109,7 @@ namespace Dragon_Fighting_Game
                     return;
             }
         }
-        void block ()
+        void block () // enable block
         {
             switch (playerInitiative)
             {
@@ -123,7 +123,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void attack()
+        void attack() // attack calculations. check for block and prevents adding of health glitch
         {
             switch(playerInitiative)
             {
@@ -165,7 +165,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void specialAttack()
+        void specialAttack() // special attack, missing cooldown mechanic
         {
             switch (playerInitiative)
             {
@@ -207,7 +207,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void turns()
+        void turns() // checks if it switches to the next player, or roll the dice
         {
             if (nextRound == false)
             {
@@ -234,7 +234,7 @@ namespace Dragon_Fighting_Game
             }
         }
 
-        private void btnAttack_Click(object sender, EventArgs e)
+        private void btnAttack_Click(object sender, EventArgs e) // assigning buttons
         {
             attack();
             turns();

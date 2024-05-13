@@ -14,15 +14,15 @@ namespace Dragon_Fighting_Game
     {
         public static FrmCharacterCreationWindow instance;
 
-        public string[] p1Data = new string[3];
+        public string[] p1Data = new string[3]; //Creating arrays
         public string[] p2Data = new string[3];
         public int[] p1Values = new int[4];
         public int[] p2Values = new int[4];
 
-        int dragon1Choice = 0;
+        int dragon1Choice = 0; // used to assign dragon types to players
         int dragon2Choice = 0;
 
-        const string iceDragonName = "Ice Dragon";
+        const string iceDragonName = "Ice Dragon"; // dragon stats
         const int iceDragonHealth = 30;
         const int iceDragonAttack = 4;
         const int iceDragonSpecialAttack = 9;
@@ -46,20 +46,20 @@ namespace Dragon_Fighting_Game
         const int earthDragonSpecialAttack = 5;
         const int earthDragonBlock = 6;
 
-        bool player1Ready;
+        bool player1Ready; //used to check if players are ready before activating the "start" button
         bool player2Ready;
 
         public FrmCharacterCreationWindow()
         {
             InitializeComponent();
 
-            instance = this;
+            instance = this; // moves info to the other form
 
         }
 
         private void btnPlayer1Save_Click(object sender, EventArgs e)
         {
-            if (txtPlayer1Name.Text != "" && txtDragon1Name.Text != "" && dragon1Choice != 0)
+            if (txtPlayer1Name.Text != "" && txtDragon1Name.Text != "" && dragon1Choice != 0) // checks if all fields are filled before proceeding
             {
                 int button1Press = 0;
                 saveValues(button1Press);
@@ -84,7 +84,7 @@ namespace Dragon_Fighting_Game
 
         void saveValues(int buttonPress)
         {
-            switch (buttonPress)
+            switch (buttonPress) // assigns dragon stats to players
             {
                 case 0:
                         p1Data[0] = txtPlayer1Name.Text;
@@ -164,7 +164,7 @@ namespace Dragon_Fighting_Game
 
         void checkStartButton()
         {
-            if (player1Ready && player2Ready)
+            if (player1Ready && player2Ready) //enables the start button
             {
                 btnStart.Enabled = true;
             }
@@ -210,7 +210,7 @@ namespace Dragon_Fighting_Game
             dragon2Choice = 4;
         }
 
-        private void btnStart_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e) // switches to the other form
         {
             frmFight frmFight = new frmFight();
             frmFight.Show();
