@@ -410,7 +410,7 @@
             this.Controls.Add(this.grpPlayer2);
             this.Controls.Add(this.grpPlayer1);
             this.Name = "FrmCharacterCreationWindow";
-            this.Text = "S";
+            this.Text = "Character Creation";
             this.grpPlayer1.ResumeLayout(false);
             this.grpPlayer1.PerformLayout();
             this.grpDragon1Type.ResumeLayout(false);

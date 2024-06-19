@@ -234,6 +234,39 @@ namespace Dragon_Fighting_Game
             }
         }
 
+        void message(string message)
+        {
+            rtbBattleLog.Text += "\n------------------------------" +
+                "\n" + message +
+                "\n------------------------------";
+            rtbBattleLog.SelectionStart = rtbBattleLog.Text.Length;
+            rtbBattleLog.ScrollToCaret();
+        }
+
+        void dead()
+        {
+            if (p1values[0] <= 0)
+            {
+                message($"{p1Names[0]}'s Dragon {p1Names[1]} has died" +
+                    $"\n {p2Names[0]} is the winner!");
+
+                btnAttack.Enabled = false;
+                btnBlock.Enabled = false;
+                btnSpecial.Enabled = false;
+                btnRest.Enabled = false;
+            }
+            else if (p2values[0] <= 0)
+            {
+                message($"{p2Names[0]}'s Dragon {p2Names[1]} has died" +
+                    $"\n {p1Names[0]} is the winner!");
+
+                btnAttack.Enabled = false;
+                btnBlock.Enabled = false;
+                btnSpecial.Enabled = false;
+                btnRest.Enabled = false;
+            }
+        }
+
         private void btnAttack_Click(object sender, EventArgs e) // assigning buttons
         {
             attack();
