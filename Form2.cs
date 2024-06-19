@@ -71,7 +71,7 @@ namespace Dragon_Fighting_Game
             playerInitiative = playerTurn;
         }
 
-        void onLoad()
+        void onLoad() // Hides rest button and transfers player data from the pervious form
         {
             instance = this;
             btnRest.Hide();
@@ -111,7 +111,7 @@ namespace Dragon_Fighting_Game
                     return;
             }
         }
-        void block () // enable block
+        void block () // enable block and adds message to battle log
         {
             switch (playerInitiative)
             {
@@ -129,7 +129,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void attack() // attack calculations. check for block and prevents adding of health glitch
+        void attack() // attack calculations. check for block and prevents adding of health glitch, and adds message to battle log
         {
             switch(playerInitiative)
             {
@@ -177,7 +177,7 @@ namespace Dragon_Fighting_Game
 
         }
 
-        void specialAttack() // special attack, missing cooldown mechanic
+        void specialAttack() // special attack, compleated cooldown mechanic, and adds message to battle log
         {
             switch (playerInitiative)
             {
@@ -255,7 +255,7 @@ namespace Dragon_Fighting_Game
             }
         }
 
-        void rest(int restingDragon)
+        void rest(int restingDragon) // Checks which dragon is resting and forces that dragon to rest
         {
             switch(restingDragon)
             {
@@ -282,7 +282,7 @@ namespace Dragon_Fighting_Game
             }
         }
 
-        void checkForRest()
+        void checkForRest() // checks if a dragon has performed special attack, and if it's that dragons tuen so that it can force it to rest
         {
             if (playerInitiative == 1 && p1MustRest == true)
             {
@@ -294,7 +294,7 @@ namespace Dragon_Fighting_Game
             }
         }
 
-        void message(string message)
+        void message(string message) // easily write messages and scrolls down the Battle Log
         {
             rtbBattleLog.Text += "\n------------------------------" +
                 "\n" + message +
@@ -327,7 +327,7 @@ namespace Dragon_Fighting_Game
             }
         }
 
-        private void btnAttack_Click(object sender, EventArgs e) // assigning buttons
+        private void btnAttack_Click(object sender, EventArgs e) // assigning buttons, and all checks performed here
         {
             attack();
             turns();
@@ -354,7 +354,7 @@ namespace Dragon_Fighting_Game
             userInterface();
         }
 
-        private void btnRest_Click(object sender, EventArgs e)
+        private void btnRest_Click(object sender, EventArgs e) // turn hides rest button
         {
             btnRest.Hide();
             turns();
