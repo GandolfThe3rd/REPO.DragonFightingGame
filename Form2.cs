@@ -21,6 +21,8 @@ namespace Dragon_Fighting_Game
 
         bool p1Block;
         bool p2Block;
+        bool p1MustRest;
+        bool p2MustRest;
 
         bool nextRound = false;
 
@@ -173,7 +175,7 @@ namespace Dragon_Fighting_Game
 
                     if (p2Block == true && p2values[3] >= p1values[2])
                     {
-                        return;
+                        
                     }
                     else if (p2Block == true)
                     {
@@ -185,12 +187,16 @@ namespace Dragon_Fighting_Game
                         p2values[0] = p2values[0] - p1values[2];
                     }
 
+                    message($"{p1Names[0]}'s Turn:" +
+                        $"\n{p1Names[1]} performs a Special Attack!");
+                    p1MustRest = true;
+
                     return;
                 case 2:
 
                     if (p1Block == true && p1values[3] >= p2values[2])
                     {
-                        return;
+                        
                     }
                     else if (p1Block == true)
                     {
@@ -201,6 +207,11 @@ namespace Dragon_Fighting_Game
                     {
                         p1values[0] = p1values[0] - p2values[2];
                     }
+
+                    message($"{p2Names[0]}'s Turn:" +
+                        $"\n{p2Names[1]} performs a Special Attack!");
+
+                    p2MustRest = true;
 
                     return;
             }
@@ -231,6 +242,45 @@ namespace Dragon_Fighting_Game
                     p2Block = false;
                     nextRound = false;
                     return;
+            }
+        }
+
+        void rest(int restingDragon)
+        {
+            switch(restingDragon)
+            {
+                case 1:
+                    {
+                        btnRest.Show();
+                        message($"{p1Names[0]}'s Turn" +
+                            $"\n{p1Names[1]} is too tired, and rests");
+
+                        p1MustRest = false;
+
+                        break;
+                    }
+                case 2:
+                    {
+                        btnRest.Show();
+                        message($"{p2Names[0]}'s Turn" +
+                            $"\n{p2Names[1]} is too tired, and rests");
+
+                        p2MustRest = false;
+
+                        break;
+                    }
+            }
+        }
+
+        void checkForRest()
+        {
+            if (playerInitiative == 1 && p1MustRest == true)
+            {
+                rest(1);
+            }
+            else if (playerInitiative == 2 && p2MustRest == true)
+            {
+                rest(2);
             }
         }
 
@@ -271,6 +321,7 @@ namespace Dragon_Fighting_Game
         {
             attack();
             turns();
+            checkForRest();
             userInterface();
         }
 
@@ -278,12 +329,21 @@ namespace Dragon_Fighting_Game
         {
             specialAttack();
             turns();
+            checkForRest();
             userInterface();
         }
 
         private void btnBlock_Click(object sender, EventArgs e)
         {
             block();
+            turns();
+            checkForRest();
+            userInterface();
+        }
+
+        private void btnRest_Click(object sender, EventArgs e)
+        {
+            btnRest.Hide();
             turns();
             userInterface();
         }
