@@ -117,9 +117,13 @@ namespace Dragon_Fighting_Game
             {
                 case 1:
                     p1Block = true;
+                    message($"{p1Names[0]}'s Turn:" +
+                        $"\n{p1Names[1]} performs a Block!");
                     return;
                 case 2:
                     p2Block = true;
+                    message($"{p2Names[0]}'s Turn:" +
+                        $"\n{p2Names[1]} performs a Block!");
                     return;
             }
 
@@ -145,6 +149,9 @@ namespace Dragon_Fighting_Game
                         p2values[0] = p2values[0] - p1values[1];
                     }
 
+                    message($"{p1Names[0]}'s Turn:" +
+                        $"\n{p1Names[1]} performs an Attack!");
+
                     return;
                 case 2:
 
@@ -161,6 +168,9 @@ namespace Dragon_Fighting_Game
                     {
                         p1values[0] = p1values[0] - p2values[1];
                     }
+
+                    message($"{p2Names[0]}'s Turn:" +
+                        $"\n{p2Names[1]} performs an Attack!");
 
                     return;
             }
@@ -322,6 +332,7 @@ namespace Dragon_Fighting_Game
             attack();
             turns();
             checkForRest();
+            dead();
             userInterface();
         }
 
@@ -330,6 +341,7 @@ namespace Dragon_Fighting_Game
             specialAttack();
             turns();
             checkForRest();
+            dead();
             userInterface();
         }
 
@@ -338,6 +350,7 @@ namespace Dragon_Fighting_Game
             block();
             turns();
             checkForRest();
+            dead();
             userInterface();
         }
 
